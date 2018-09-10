@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html id="page_feedback">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>博学谷-意见反馈中心</title>
+		<meta name="keywords" content="Java培训,Android培训,安卓培训,PHP培训,C++培训,iOS培训,网页设计培训,平面设计培训,UI设计培训,游戏开发培训,移动开发培训,网络营销培训,web前端培训" />
+		<meta name="description" content="博学谷云课堂为传智播客旗下在线教育品牌，将积累10年的实体班线下课程和教学方法引到线上。课程大纲全新优化，内容有广度、有深度，顶尖讲师全程直播授课。专注整合传智优势教学资源、打造适合在线学习并能保证教学结果的优质教学产品，同时打造和运营一整套教育生态软件体系，为用户提供满足自身成长和发展要求的有效服务。" />
+		<meta name="renderer" content="webkit">
+		<meta name="baidu-site-verification" content="UHaAQAeAQF" />
+		<meta baidu-gxt-verify-token="8b39694d4a3e63c20339146653115ace">
+		<meta name="fragment" content="!">
+		<!-- <link rel="stylesheet" type="text/css" href="/web/font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="/web/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/web/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="/web/css/footer.css?v=20180814" />
+		<link rel="stylesheet" type="text/css" href="/web/commTemplate/commonJs/common.css" /> -->
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logoWarp">
+				<div class="logo">
+					<!-- <img src="../web/images/footer/footerLogo1.png" alt="hehe" /> -->
+					<span></span>
+					<p>意见反馈中心</p>
+				</div>
+			</div>
+		</div>
+		<div class="warp">
+			<div class="main">
+				<p class="title"><span>*</span>请选择你想反馈的问题：</p>
+				<div class="selectWarp">
+					<div class="optionWarp optionOn" data-type="1">
+						<span><i class="iconfont icon-dawancheng"></i></span>
+						<p>产品建议</p>
+					</div>
+					<div class="optionWarp" data-type="0">
+						<span><i class="iconfont icon-dawancheng"></i></span>
+						<p>功能异常</p>
+					</div>
+					<div class="optionWarp" data-type="2">
+						<span><i class="iconfont icon-dawancheng"></i></span>
+						<p>课程反馈</p>
+					</div>
+					<div class="optionWarp" data-type="3">
+						<span><i class="iconfont icon-dawancheng"></i></span>
+						<p>视频反馈</p>
+					</div>
+					<div class="optionWarp" data-type="4">
+						<span><i class="iconfont icon-dawancheng"></i></span>
+						<p>其他</p>
+					</div>
+				</div>
+			</div>
+			<div class="main detail-section">
+				<p class="title"><span>*</span>请补充详细问题和意见：</p>
+				<div class="detailedAdvice">
+					<textarea name="" rows="" cols="" placeholder="请填写具体内容帮助我们了解您的问题和意见~"></textarea>
+					<span>200</span>
+				</div>
+				<p class="tip-error hide" id="detail-tip-error">内容不能为空！</p>
+			</div>
+			<div class="main">
+				<form id="form" class="fileWarp" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="projectName" value="online" />
+					<input type="hidden" name="fileType" value="1" />
+					<input type="hidden" name="sign" id="sign" value="" />
+					<span class="chooseFile">上传截图 </span>
+					<input type="file" name="file" id="file"> 
+					<p>（最多可以上传4张图片，图片大小不能超过500KB,图片支持jpg、gif、png）</p>
+					<p class="file-tip-error" id="file-tip-error"></p>
+				</form>
+				<div class="imgWarp">
+					<label for="">已上传：</label>
+					<span id="image-upload-list">
+					</span>
+					<span id="tip-uploading" class="tip-uploading hide" style="font-size:12px;">正在上传中</span>
+				</div>
+			</div>
+
+			<div class="main contact-section">
+				<p class="title">你可以留下常用QQ或邮箱，以便进一步联络。</p>
+				<input type="text" id="contact-input" class="contact" placeholder="请留下真实联系方式（QQ、邮箱）方便我们答疑解惑！"/>
+				<p class="tip-container">
+					<span class="tip-error hide" id="tip-error"">请输入正确的联系方式!</span>
+				</p>	
+			</div>
+			<div class="main clearfix btnWarp">
+				<div class="formBtn" id="form-submit">提交</div>
+			</div>
+
+			<!-- <link rel="import" href="/widgets/hello/hello.html?__inline"> -->
+		</div>
+		<!-- <div class="feedback-mask hide" id="feedback-mask"></div> -->
+		<!-- <div class="check-container hide" id="check-container">
+			<p class="check-txt">正在检测中</p>
+			<span class="dotting"></span>
+		</div> -->
+		
+		<!-- <script src="/web/js/bootstrap.js" type="text/javascript"></script>
+		<script src="/web/font/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/web/js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/web/js/artTemplate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/web/commTemplate/commonJs/Common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/web/js/zhuge.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/web/commTemplate/loginTemp/loginTemp.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/web/commTemplate/commonJs/base64.js" type="text/javascript" charset="utf-8"></script> -->
+		
+		<script type="text/javascript" src="/static/js/handlebars-4.0.11.js"></script>
+		<script type="text/javascript" src="/static/js/mod.js"></script>
+		<script type="text/javascript" src="./index.js"></script>
+		<!-- <script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?c11880ab74b1d3cd437ca5f41060fd17";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script> -->
+
+	</body>	
+</html>

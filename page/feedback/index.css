@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+.clearfix:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/*IE/7/6*/
+.clear {
+  clear: both;
+}
+.header {
+  width: 100%;
+  height: 64px;
+}
+.header .logoWarp {
+  width: 1000px;
+  margin: 0 auto 0;
+}
+.header .logoWarp .logo {
+  height: 64px;
+  line-height: 64px;
+}
+.header .logoWarp .logo img {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+}
+.header .logoWarp .logo span {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  margin: 0 10px 0 10px;
+}
+.header .logoWarp .logo p {
+  display: inline-block;
+  font-size: 20px;
+  color: #e2eaff;
+  margin: 0;
+}
+.warp {
+  width: 1000px;
+  margin: 20px auto 0;
+  background-color: #fff;
+  padding: 30px 30px 40px 30px;
+}
+.warp .main {
+  width: 100%;
+}
+.warp .main .title {
+  color: #34495e;
+  font-size: 14px;
+}
+.warp .main .title span {
+  color: #ff544c;
+  margin-right: 5px;
+}
+.warp .main .selectWarp {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 35px;
+}
+.warp .main .selectWarp .optionWarp {
+  display: inline-block;
+  margin-right: 115px;
+  cursor: pointer;
+}
+.warp .main .selectWarp .optionWarp span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  font-size: 18px;
+  border: 1px solid #ccd5d8;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+}
+.warp .main .selectWarp .optionWarp span i {
+  display: none;
+  position: absolute;
+  left: -2px;
+  top: -3px;
+}
+.warp .main .selectWarp .optionWarp p {
+  display: inline-block;
+  font-size: 14px;
+  color: #34495e;
+  margin: 0 0 0 5px;
+}
+.warp .main .selectWarp .optionWarp:last-child {
+  margin: 0;
+}
+.warp .main .selectWarp .optionOn span {
+  border: none;
+  overflow: visible;
+}
+.warp .main .selectWarp .optionOn span i {
+  display: inline-block;
+}
+.warp .main .detailedAdvice {
+  position: relative;
+  width: 100%;
+}
+.warp .main .detailedAdvice textarea {
+  display: block;
+  width: 100%;
+  height: 110px;
+  border: 1px solid #e3edf1;
+  padding: 11px 10px;
+  font-size: 14px;
+  margin-top: 6px;
+  resize: none;
+}
+.warp .main .detailedAdvice span {
+  position: absolute;
+  right: 6px;
+  bottom: 1px;
+  font-size: 12px;
+  color: #9aabb8;
+}
+.warp .main .fileWarp {
+  position: relative;
+  margin-top: 10px;
+}
+.warp .main .fileWarp .chooseFile {
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 14px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.warp .main .fileWarp .chooseFile:hover {
+  text-decoration: underline;
+}
+.warp .main .fileWarp input {
+  font-size: 100px;
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  left: 2px;
+  right: 0;
+  top: 0px;
+  opacity: 0;
+  overflow: hidden;
+  filter: alpha(opacity=0);
+}
+.warp .main .fileWarp p {
+  display: inline-block;
+  color: #9aabb8;
+  font-size: 12px;
+}
+.warp .main .imgWarp {
+  margin-bottom: 38px;
+}
+.warp .main .imgWarp label {
+  font-size: 14px;
+  color: #a9b8c2;
+}
+.warp .main .imgWarp span {
+  font-size: 14px;
+  color: #a9b8c2;
+  margin-right: 30px;
+}
+.warp .main .imgWarp span i {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ccd5d8;
+  background-image: url(../../web/images/mynote-close.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.warp .main .imgWarp .image-upload {
+  width: 120px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.warp .main .contact {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #e3edf1;
+  padding: 10px 11px;
+  font-size: 14px;
+  color: #9aabb8;
+  margin-top: 5px;
+}
+.warp .main .hint {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 40px;
+  color: #9aabb8;
+  position: relative;
+}
+.warp .main .hint .sysenv {
+  cursor: pointer;
+  color: #34495e;
+  border-bottom: 1px solid #d8dbde;
+}
+.warp .main .hint .sysenv:hover {
+  color: #466de2;
+  border-bottom: 1px solid #dbe0f8;
+}
+.warp .main .hint .warp .main .hint .layer {
+  position: absolute;
+  right: 0;
+  top: -116px;
+  width: 113px;
+  height: 116px;
+  background-color: #eff3f5;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+.warp .main .hint .warp .main .hint .layer-fadein {
+  opacity: 1;
+  z-index: 1;
+}
+.warp .main .hint .warp .main .hint .arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #eff3f5 transparent transparent transparent;
+  bottom: -12px;
+  left: 50%;
+  margin-left: -12px;
+}
+.warp .main .hint ul li {
+  padding-left: 15px;
+  font-size: 14px;
+  color: #34495e;
+}
+.warp .main .formBtn {
+  float: right;
+  width: 140px;
+  line-height: 40px;
+  height: 40px;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+.warp .btnWarp {
+  margin-top: 15px;
+}
+.warp .contact-section .tip-container {
+  position: relative;
+  height: 28px;
+}
+.warp .contact-section .tip-container .tip-error {
+  position: absolute;
+  color: #ff544c;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-top: 8px;
+}
